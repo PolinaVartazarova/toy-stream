@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Zona Pro';
+    src: url('../fonts/ZonaPro/ZonaPro-ExtraBold.eot');
+    src: local('../fonts/ZonaPro/Zona Pro ExtraBold'), local('ZonaPro-ExtraBold'),
+        url('../fonts/ZonaPro/../fonts/ZonaPro/ZonaPro-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ZonaPro/ZonaPro-ExtraBold.woff2') format('woff2'),
+        url('../fonts/ZonaPro/ZonaPro-ExtraBold.woff') format('woff'),
+        url('../fonts/ZonaPro/ZonaPro-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+h1 {
+	font-family: 'Zona Pro', sans-serif;
+	font-size: 72px;
+	font-weight: 800;
+}

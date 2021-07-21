@@ -2,14 +2,13 @@
     font-family: 'Zona Pro';
     src: url('../fonts/ZonaPro/ZonaPro-ExtraBold.eot');
     src: local('../fonts/ZonaPro/Zona Pro ExtraBold'), local('ZonaPro-ExtraBold'),
-        url('../fonts/ZonaPro/../fonts/ZonaPro/ZonaPro-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ZonaPro/ZonaPro-ExtraBold.eot?#iefix') format('embedded-opentype'),
         url('../fonts/ZonaPro/ZonaPro-ExtraBold.woff2') format('woff2'),
         url('../fonts/ZonaPro/ZonaPro-ExtraBold.woff') format('woff'),
         url('../fonts/ZonaPro/ZonaPro-ExtraBold.ttf') format('truetype');
     font-weight: 800;
     font-style: normal;
 }
-
 
 @font-face {
     font-family: 'Akrobat';
@@ -49,12 +48,12 @@
 
 @font-face {
     font-family: 'Akrobat';
-    src: url('Akrobat-SemiBold.eot');
-    src: local('Akrobat SemiBold'), local('Akrobat-SemiBold'),
-        url('Akrobat-SemiBold.eot?#iefix') format('embedded-opentype'),
-        url('Akrobat-SemiBold.woff2') format('woff2'),
-        url('Akrobat-SemiBold.woff') format('woff'),
-        url('Akrobat-SemiBold.ttf') format('truetype');
+    src: url('../fonts/Akrobat/Akrobat-SemiBold.eot');
+    src: local('../fonts/Akrobat/Akrobat SemiBold'), local('Akrobat-SemiBold'),
+        url('../fonts/Akrobat/Akrobat-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Akrobat/Akrobat-SemiBold.woff2') format('woff2'),
+        url('../fonts/Akrobat/Akrobat-SemiBold.woff') format('woff'),
+        url('../fonts/Akrobat/Akrobat-SemiBold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
 }
@@ -97,12 +96,12 @@
 
 @font-face {
     font-family: 'Akrobat';
-    src: url('Akrobat-ExtraBold.eot');
-    src: local('Akrobat ExtraBold'), local('Akrobat-ExtraBold'),
-        url('Akrobat-ExtraBold.eot?#iefix') format('embedded-opentype'),
-        url('Akrobat-ExtraBold.woff2') format('woff2'),
-        url('Akrobat-ExtraBold.woff') format('woff'),
-        url('Akrobat-ExtraBold.ttf') format('truetype');
+    src: url('../fonts/Akrobat/Akrobat-ExtraBold.eot');
+    src: local('../fonts/Akrobat/Akrobat ExtraBold'), local('Akrobat-ExtraBold'),
+        url('../fonts/Akrobat/Akrobat-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Akrobat/Akrobat-ExtraBold.woff2') format('woff2'),
+        url('../fonts/Akrobat/Akrobat-ExtraBold.woff') format('woff'),
+        url('../fonts/Akrobat/Akrobat-ExtraBold.ttf') format('truetype');
     font-weight: 800;
     font-style: normal;
 }
@@ -125,11 +124,24 @@ body {
     text-align: right;
 }
 
-.button {
+.button-language {
     display: inline-flex;
-    padding: 0;
+    font-family: 'Akrobat', sans-serif;
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 27px;    
+    background-color: #CE0002;
+    color: #FFF;
     text-decoration: none;
+    padding: 2.9% 2.4% 2.9% 2.4%;
+    cursor: pointer;
+    }
+
+.button-language:hover,
+.button-language:focus {
+    background-color: #CE0002;
 }
+
 
 .block {
     max-width: 1920px;
@@ -140,6 +152,8 @@ body {
     background-position: right;
     margin-bottom: 5%;
 }
+
+    /*background-size: contain;*/
 
 h1 {
     font-family: 'Zona Pro', sans-serif;
@@ -153,6 +167,37 @@ h1 {
     font-weight: 600;
     font-size: 24px;
     line-height: 30px;
+}
+
+.button-details {
+    display: inline-flex;
+    font-family: 'Akrobat', sans-serif;
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 27px;    
+    background-color: #CE0002;
+    color: #FFF;
+    text-decoration: none;
+    padding: 2.9% 1.4% 2.9% 1.4%;
+    cursor: pointer;
+    position: relative;
+}
+
+.button-details:hover,
+.button-details:focus {
+    background-color: #CE0002;
+}
+
+.button-details::after {
+    width: 90px;
+    height: 20px;
+    background-color: #CE0002;
+    content: "";
+    background-image: url("../img/Arrow3.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    margin-top: 60px;
 }
 
 .page-footer {

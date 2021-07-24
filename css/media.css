@@ -47,6 +47,18 @@
 
 
 
+
+@media screen and (min-width: 0) {
+    .yellow-main-page {
+    background: linear-gradient(to right, #FAFAFA 20%, #FFEA2F 20%);
+    }
+    .blue-main {
+    background: linear-gradient(to right, #FAFAFA 30%, #D3D1E9 30%);
+    }
+}
+
+
+
 /*Ширина экрана, прошлый вариант*/
 
 /*@media screen and (min-width: 375px) {

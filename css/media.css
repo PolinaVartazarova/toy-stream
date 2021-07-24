@@ -1,0 +1,88 @@
+/* Навигация - список menu-list */
+
+
+@media screen and (max-width: 1023px) {
+    .menu-list {
+    display: none;
+    }
+}
+
+
+/*Ширина экрана, шрифт h1, шапка page-header*/
+
+
+@media screen and (min-width: 375px) {
+    container {
+    width: 375px;
+    }
+}
+
+@media screen and (min-width: 1024px) { 
+    container {
+    width: 1024px;
+    outline: 2px solid #000;
+    }
+    .page-header {
+    padding-bottom: 64px;
+    }
+    h1 {
+    font-size: 72px;
+    line-height: 85px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    container {
+    width: 1920px;
+    outline: 2px solid #000;
+    }
+    .page-header {
+    padding-bottom: 79px;
+    }
+    h1 {
+    font-size: 72px;
+    line-height: 85px;
+    }
+}
+
+
+
+/*Ширина экрана, прошлый вариант*/
+
+/*@media screen and (min-width: 375px) {
+    .page-header-career,
+    .block-career, 
+    .page-footer {
+    width: 375px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .page-header-career, 
+    .block-career, 
+    .page-footer {
+    width: 1024px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .page-header-career,
+    .block-career, 
+    .page-footer {
+    width: 1920px;
+    }
+}*/
+
+/*Список вакансий*/
+
+/*@media screen and (min-width: 1024px) {
+    .vacancy-item {
+    width: 450px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .vacancy-item {
+    width: 505px;
+    }
+}*/

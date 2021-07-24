@@ -3,18 +3,17 @@ body {
 }
 
 .container {
-    min-width: 375px;
+    /*min-width: 375px;*/
     margin-left: auto;
     margin-right: auto;
     background-color: #fff;
     box-sizing: border-box;
-    margin: 0;
 }
 
 .page-header {
     text-align: right;
-    background: linear-gradient(to right, #FAFAFA 20%, #FFEA2F 20%);
-    padding-bottom: 5%;
+    /*background: linear-gradient(to right, #FAFAFA 20%, #FFEA2F 20%);*/
+    padding-bottom: 49px;
     outline: 2px solid #000;
 }
 
@@ -66,25 +65,24 @@ body {
 
 /*Background-attachment устанавливает, будет ли прокручиваться фоновое изображение вместе с содержимым элемента (scroll, fixed, local) */
 
-.block-home {
+/*.block-home {
     max-width: 1920px;
-    height: 822px;
     background-color: #FFEA2F;
     background: url("../img/Frame.png"), linear-gradient(to right, #FAFAFA 20%, #FFEA2F 20%);
     background-position: right;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;*/
     /*background-attachment: ;*/
-    background-size: contain;
-    margin-bottom: 6%;
+    /*background-size: contain;
     outline: 2px solid #000;
-}
+}*/
 
     /*background-size: contain;*/
 
 h1 {
     font-family: 'Zona Pro', sans-serif;
     font-weight: 800;
-    font-size: 72px;
+    font-size: 32px;
+    line-height: 38px;
     margin: 0;
 }
 
@@ -128,9 +126,8 @@ h1 {
 
 
 .page-footer {
-    width: 375px;
     background-color: #EFEFEF;
-    padding-bottom: 4%;
+    padding-bottom: 54px;
     margin: 0;
 }
 
@@ -155,18 +152,12 @@ h1 {
 
 /*карьера*/
 
-.page-header-career {
-    width: 375px;
-    text-align: right;
-    background: linear-gradient(to right, #FAFAFA 30%, #D3D1E9 30%);
-    padding-bottom: 5%;
-    outline: 2px solid #000;
-    margin: 0;
+    /*background: linear-gradient(to right, #FAFAFA 30%, #D3D1E9 30%);*/
+
 }
 
 .block-career {
     width: 375px;
-    /*height: 822px;*/
     background-color: #FFEA2F;
     background: /*url("../img/Light.png"),*/ linear-gradient(to right, #FAFAFA 30%, #D3D1E9 30%);
     background-position: right;
@@ -174,7 +165,6 @@ h1 {
     /*background-attachment: ;*/
     background-size: contain;
     margin: 0;
-    /*margin-bottom: 6%;*/
 }
 
 .vacancy {
@@ -197,53 +187,4 @@ h1 {
     font-weight: 800;
     font-size: 32px;
     line-height: 40px;
-}
-
-
-/*Пример медиа-запроса*/
-
-/*@media (min-width: 1024px) {
-    body {
-        background-color: orange
-    }
-}*/
-
-/*Ширина экрана*/
-
-@media screen and (min-width: 375px) {
-    .page-header-career,
-    .block-career, 
-    .page-footer {
-    width: 375px;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    .page-header-career, 
-    .block-career, 
-    .page-footer {
-    width: 1024px;
-    }
-}
-
-@media screen and (min-width: 1920px) {
-    .page-header-career,
-    .block-career, 
-    .page-footer {
-    width: 1920px;
-    }
-}
-
-/*Список вакансий*/
-
-@media screen and (min-width: 1024px) {
-    .vacancy-item {
-    width: 450px;
-    }
-}
-
-@media screen and (min-width: 1920px) {
-    .vacancy-item {
-    width: 505px;
-    }
 }

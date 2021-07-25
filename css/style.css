@@ -15,7 +15,7 @@ body {
     outline: 2px solid #000;
 }
 
-.menu {
+.nav {
     font-family: Akrobat;
     font-weight: 600;
     font-size: 20px;
@@ -184,15 +184,23 @@ h1 {
 .block-career {
     margin-left: auto;
     margin-right: auto;
-    background-color: #FFEA2F;
+    /*background-color: #D3D1E9;*/
     box-sizing: border-box;
-    /*background: url("../img/Light.png"), linear-gradient(to right, #FAFAFA 30%, #D3D1E9 30%);
-    background-position: right;
-    background-repeat: no-repeat;
-    background-attachment: ;
-    background-size: contain;
-    margin: 0;*/
 }
+
+
+
+/*.block-career-light {
+    background: url("../img/Light-on.png");
+    background-repeat: no-repeat;
+    background-size: content;
+    background-position: center;
+    height: 324px;
+    padding-bottom: 38px;
+}*/
+
+
+
 
 .vacancy {
     font-family: Zona Pro;
@@ -209,7 +217,6 @@ h1 {
 }
 
 .vacancy-item {
-    width: 345px;
     padding-top: 250px;
     padding-bottom: 50px;
     background-color: #F5F5F5;

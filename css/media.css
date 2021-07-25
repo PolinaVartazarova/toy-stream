@@ -10,20 +10,18 @@
 
 /*Ширина экрана, шрифт h1, шапка page-header*/
 
+/*outline: 2px solid red; - рамка*/
 
 @media screen and (max-width: 1023px) {
     .vacancy-container {
-    width: 375px;
-    padding-left: 15px;
-    outline: 2px solid red; 
+    width: 375px; 
     }
 }
 
 
 @media screen and (min-width: 1024px) { 
     .vacancy-container {
-    width: 1024px;
-    outline: 2px solid red; 
+    width: 1024px; 
     }
     .page-header {
     padding-bottom: 64px;
@@ -37,7 +35,6 @@
 @media screen and (min-width: 1920px) {
     .vacancy-container {
     width: 1920px;
-    outline: 2px solid red;
     }
     .page-header {
     padding-bottom: 79px;
@@ -51,34 +48,86 @@
 
 
 
-@media screen and (min-width: 0) {
+@media screen and (max-width: 1023px) {
     .yellow-main-page {
     background: linear-gradient(to right, #FAFAFA 20%, #FFEA2F 20%);
-    outline: 2px solid #000;
     }
     .blue-main {
-    background: linear-gradient(to right, #FAFAFA 30%, #D3D1E9 30%);
-    outline: 2px solid #000;
+    background: linear-gradient(to right, #FAFAFA 20%, #D3D1E9 20%);
     }
 }
 
-
-
-/* Картинка на фоне*/
-
-/*@media screen and (min-width: 1024px) {
-    .frame {
-    width: 786px;
-    padding: 0 49px 0 189px;
+@media screen and (min-width: 1024px) {
+    .yellow-main-page {
+    background: linear-gradient(to right, #FAFAFA 10%, #FFEA2F 10%);
+    }
+    .blue-main {
+    background: linear-gradient(to right, #FAFAFA 10%, #D3D1E9 10%);
     }
 }
 
 @media screen and (min-width: 1920px) {
-    .frame {
-    width: 786px;
-    padding: 0 40px 0 1094px;
+    .yellow-main-page {
+    background: linear-gradient(to right, #FAFAFA 40%, #FFEA2F 40%);
     }
-}*/
+    .blue-main {
+    background: linear-gradient(to right, #FAFAFA 40%, #D3D1E9 40%);
+    }
+}
+
+
+
+/* Картинка лампочка на фоне*/
+
+@media screen and (max-width: 1023px) {
+    .frame-light {
+    padding: 0 17px 38px 17px;
+    text-align: center;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .frame-light {
+    padding: 0 22px 88px 169px;
+    text-align: center;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .frame-light {
+    text-align: right;
+    padding: 0 464px 29px 1131px;
+    }
+}
+
+
+
+/* Картинка единорога на фоне*/
+
+@media screen and (max-width: 1023px) {
+    .frame-unicorn {
+    padding: 0 15px 313px 15px;
+    text-align: center;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .frame-unicorn {
+    padding: 0 22px 88px 169px;
+    text-align: center;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .frame-unicorn {
+    padding: 0 464px 29px 1131px;
+    text-align: right;
+    }
+}
+
+
+
+
 
 
 /*СПИСОК ВАКАНСИЙ*/

@@ -7,12 +7,10 @@ body {
     margin-right: auto;
     background-color: #fff;
     box-sizing: border-box;
-    padding: 0 2px 0 2px;
 }
 
 .page-header {
     text-align: right;
-    /*background: linear-gradient(to right, #FAFAFA 20%, #FFEA2F 20%);*/
     padding-bottom: 49px;
     outline: 2px solid #000;
 }
@@ -25,7 +23,7 @@ body {
     text-align: center;
     display: inline-block;
     outline: 2px solid #000;
-    padding: 20px 0 0 0;
+    padding: 20px 1% 0 0;
 }
 
 .menu-list {
@@ -42,6 +40,27 @@ body {
 }
 
 
+.menu-button {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+
+.menu-button .icon-cross {
+    display: none;
+}
+
+
+.menu-button.is-open .icon-cross {
+    display: block;
+}
+
+.menu-button.is-open .icon-menu {
+    display: none;
+}
+
 
 .button-language {
     display: inline-block;
@@ -55,7 +74,7 @@ body {
     text-decoration: none;
     padding: 2.9% 2.4% 2.9% 2.4%;
     cursor: pointer;
-    }
+}
 
 .button-language:hover,
 .button-language:focus {
@@ -63,20 +82,30 @@ body {
 }
 
 
-/*Background-attachment устанавливает, будет ли прокручиваться фоновое изображение вместе с содержимым элемента (scroll, fixed, local) */
+/*Background-attachment устанавливает, будет ли прокручиваться фоновое изображение вместе с содержимым элемента (scroll, fixed, local)*/
 
 /*.block-home {
-    max-width: 1920px;
+    background: url("../img/Frame.png") right / 345px 322px, linear-gradient(to right, #FAFAFA 20%, #FFEA2F 20%) center;
     background-color: #FFEA2F;
-    background: url("../img/Frame.png"), linear-gradient(to right, #FAFAFA 20%, #FFEA2F 20%);
-    background-position: right;
-    background-repeat: no-repeat;*/
-    /*background-attachment: ;*/
-    /*background-size: contain;
+    background-repeat: no-repeat;
     outline: 2px solid #000;
+    min-height: 875px;
+    margin-bottom: 7%;*/
+    /*background-position: ;*/
+    /* background-attachment: ;
+    background-size: contain;*/
+   /* background-attachment: ;
+    background-size: contain;*/
+/*}*/
+
+
+/*.frame {
+     width: 345px;
+     margin-left: auto;
+     margin-right: auto;
+     padding: 0 15px 0 15px;
 }*/
 
-    /*background-size: contain;*/
 
 h1 {
     font-family: 'Zona Pro', sans-serif;
@@ -150,21 +179,19 @@ h1 {
 }
 
 
-/*карьера*/
 
-    /*background: linear-gradient(to right, #FAFAFA 30%, #D3D1E9 30%);*/
-
-}
 
 .block-career {
-    width: 375px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #FFEA2F;
-    background: /*url("../img/Light.png"),*/ linear-gradient(to right, #FAFAFA 30%, #D3D1E9 30%);
+    box-sizing: border-box;
+    /*background: url("../img/Light.png"), linear-gradient(to right, #FAFAFA 30%, #D3D1E9 30%);
     background-position: right;
     background-repeat: no-repeat;
-    /*background-attachment: ;*/
+    background-attachment: ;
     background-size: contain;
-    margin: 0;
+    margin: 0;*/
 }
 
 .vacancy {
@@ -174,17 +201,31 @@ h1 {
     line-height: 85px;
 }
 
-.vacancy-containe {
-
+.vacancy-container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    box-sizing: border-box;
 }
 
 .vacancy-item {
     width: 345px;
-    /*height: 505pх;*/
+    padding-top: 250px;
+    padding-bottom: 50px;
     background-color: #F5F5F5;
-    margin-bottom: 40px;
     font-family: Akrobat;
     font-weight: 800;
     font-size: 32px;
     line-height: 40px;
+    text-indent: 26px;
 }
+
+span {
+    text-indent: 1em;
+}
+
+.vacancy-item:not(:last-child) {
+margin-bottom: 30px;
+}
+
+

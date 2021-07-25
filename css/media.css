@@ -11,16 +11,19 @@
 /*Ширина экрана, шрифт h1, шапка page-header*/
 
 
-@media screen and (min-width: 375px) {
-    container {
+@media screen and (max-width: 1023px) {
+    .vacancy-container {
     width: 375px;
+    padding-left: 15px;
+    outline: 2px solid red; 
     }
 }
 
+
 @media screen and (min-width: 1024px) { 
-    container {
+    .vacancy-container {
     width: 1024px;
-    outline: 2px solid #000;
+    outline: 2px solid red; 
     }
     .page-header {
     padding-bottom: 64px;
@@ -32,9 +35,9 @@
 }
 
 @media screen and (min-width: 1920px) {
-    container {
+    .vacancy-container {
     width: 1920px;
-    outline: 2px solid #000;
+    outline: 2px solid red;
     }
     .page-header {
     padding-bottom: 79px;
@@ -51,18 +54,164 @@
 @media screen and (min-width: 0) {
     .yellow-main-page {
     background: linear-gradient(to right, #FAFAFA 20%, #FFEA2F 20%);
+    outline: 2px solid #000;
     }
     .blue-main {
     background: linear-gradient(to right, #FAFAFA 30%, #D3D1E9 30%);
+    outline: 2px solid #000;
     }
 }
+
+
+
+/* Картинка на фоне*/
+
+/*@media screen and (min-width: 1024px) {
+    .frame {
+    width: 786px;
+    padding: 0 49px 0 189px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .frame {
+    width: 786px;
+    padding: 0 40px 0 1094px;
+    }
+}*/
+
+
+/*СПИСОК ВАКАНСИЙ*/
+
+/*width: 50%;*/
+/*flex-basis: 50%;*/
+
+/*Образец*/
+
+/*@media screen and (min-width: 1024px) {
+    .vacancy-container {
+    display: flex;
+    flex-wrap: wrap;
+    }
+    .vacancy-item {
+    width: 450px;
+    flex-basis: 50%;
+    padding-top: 300px;
+    padding-bottom: 50px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .vacancy-container {
+    display: flex;
+    flex-wrap: wrap;
+    }
+    .vacancy-item {
+    width: 505px;
+    flex-basis: 33.3333%;
+    padding-top: 400px;
+    padding-bottom: 50px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .vacancy-item:not(:last-child) {
+    margin-bottom: 40px;
+    }
+}
+*/
+
+/*Образец для прямоугольных элементов*/
+
+/*@media screen and (min-width: 1920px) {
+    .vacancy-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -20px;
+    padding-left: 118px;
+    padding-right: 118px;
+    }
+    .vacancy-item {
+    width: calc((100% - 6 * 20px) / 3);
+    margin: 20px;
+    padding-top: 415px;
+    padding-bottom: 50px;
+    }
+}*/
+
+
+
+
+@media screen and (min-width: 1024px) {
+    .vacancy-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 30px;
+    padding-right: 30px;
+    }
+    .vacancy-item {
+    width: 450px;
+    margin: 15px;
+    padding-top: 360px;
+    padding-bottom: 50px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .vacancy-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 118px;
+    padding-right: 118px;
+    }
+    .vacancy-item {
+    width: 505px;
+    margin: 20px;
+    padding-top: 415px;
+    padding-bottom: 50px;
+    }
+}
+
+
+
+/*Настойка паддингов в списке вакансий*/
+
+@media screen and (min-width: 1024px) {
+    .vacancy-item:not(:last-child) {
+    margin-bottom: 15px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .vacancy-item:not(:last-child) {
+    margin-bottom: 20px;
+    }
+}
+
+
+
+/*Блоки страниц, паддинги*/
+
+@media screen and (max-width: 375px) {
+    .block-home,
+    .block-career {
+    padding-left: 15px;
+    padding-right: 15px;
+    }
+}
+
+
+
+
+
+
 
 
 
 /*Ширина экрана, прошлый вариант*/
 
 /*@media screen and (min-width: 375px) {
-    .page-header-career,
+    .page-header,
     .block-career, 
     .page-footer {
     width: 375px;
@@ -70,7 +219,7 @@
 }
 
 @media screen and (min-width: 1024px) {
-    .page-header-career, 
+    .page-header, 
     .block-career, 
     .page-footer {
     width: 1024px;
@@ -78,12 +227,14 @@
 }
 
 @media screen and (min-width: 1920px) {
-    .page-header-career,
+    .page-header,
     .block-career, 
     .page-footer {
     width: 1920px;
     }
 }*/
+
+
 
 /*Список вакансий*/
 
@@ -98,3 +249,5 @@
     width: 505px;
     }
 }*/
+
+

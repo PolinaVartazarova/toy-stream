@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 /">
 	<title>Карьера в Toy.Stream</title>
 	<link rel="stylesheet" href="./css/style.css" />
 	<link rel="stylesheet" href="./css/fonts.css" />
@@ -16,6 +16,25 @@
            <header class="header-container">
      
               <nav class="menu">
+
+
+                 <button 
+                     type="button" 
+                     class="menu-button <!-- is-open -->"
+                     aria-expanded="false" 
+                     data-menu-button
+                     >
+                    <svg 
+                      width="35" 
+                      height="35" 
+                      aria-label="Переключатель мобильного меню">
+                        <use class="icon-cross" href="img/Cross.svg#Cross"></use>
+                        <use class="icon-menu" href="img/Burger.svg#Burger"></use>
+                    </svg>    
+                 </button>
+
+
+
                   <ul class="menu-list">
                         <li><a class="nav-item" href="index.html">Главная</a></li>
                         <li><a class="nav-item" href="2.html">Компания</a></li>
@@ -53,15 +72,15 @@
               
              <div class="vacancy-container">
 
-                <div class="vacancy-item">User Acquisition Manager</div>
-                <div class="vacancy-item">HR Manager (Marketing/Cross)</div>
-                <div class="vacancy-item">Technical Artist 2D</div>
-                <div class="vacancy-item">Motion designer</div>
-                <div class="vacancy-item">HR Manager (Marketing/Cross)</div>
-                <div class="vacancy-item">Game designer</div>
-                <div class="vacancy-item">Game Analyst</div>
-                <div class="vacancy-item">HR Manager (Marketing/Cross)</div>
-                <div class="vacancy-item">Technical Artist 2D</div>
+                <div class="vacancy-item"><span>User Acquisition Manager</span></div>
+                <div class="vacancy-item"> HR Manager (Marketing/Cross)</div>
+                <div class="vacancy-item"> Technical Artist 2D</div>
+                <div class="vacancy-item"> Motion designer</div>
+                <div class="vacancy-item"> HR Manager (Marketing/Cross)</div>
+                <div class="vacancy-item"> Game designer</div>
+                <div class="vacancy-item"> Game Analyst</div>
+                <div class="vacancy-item"> HR Manager (Marketing/Cross)</div>
+                <div class="vacancy-item"> Technical Artist 2D</div>
 
              </div>
 
@@ -87,6 +106,10 @@
            
             </footer>     
         </div>
+
+
+<!-- скрипт для кнопки меню menu-button -->
+<script src="js/script.js" ></script>
 
 
 </body>

@@ -121,7 +121,6 @@
 @media screen and (min-width: 1920px) {
     .frame-unicorn {
     padding: 0 464px 29px 1131px;
-    text-align: right;
     }
 }
 
@@ -191,12 +190,20 @@
 
 
 
+@media screen and (max-width: 1023px) {
+    .vacancy-container {
+    padding-left: 15px;
+    padding-right: 15px;
+    }
+}
+
 @media screen and (min-width: 1024px) {
     .vacancy-container {
     display: flex;
     flex-wrap: wrap;
     padding-left: 30px;
     padding-right: 30px;
+    justify-content: center;
     }
     .vacancy-item {
     width: 450px;
@@ -212,6 +219,7 @@
     flex-wrap: wrap;
     padding-left: 118px;
     padding-right: 118px;
+    justify-content: center;
     }
     .vacancy-item {
     width: 505px;

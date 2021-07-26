@@ -181,6 +181,9 @@ h1 {
 
 
 
+/*Карьера*/
+
+
 .block-career {
     margin-left: auto;
     margin-right: auto;
@@ -188,25 +191,12 @@ h1 {
     box-sizing: border-box;
 }
 
-
-
-/*.block-career-light {
-    background: url("../img/Light-on.png");
-    background-repeat: no-repeat;
-    background-size: content;
-    background-position: center;
-    height: 324px;
-    padding-bottom: 38px;
-}*/
-
-
-
-
 .vacancy {
     font-family: Zona Pro;
     font-weight: 800;
-    font-size: 72px;
-    line-height: 85px;
+    font-size: 32px;
+    line-height: 38px;
+    padding-left: 15px;
 }
 
 .vacancy-container {
@@ -217,19 +207,15 @@ h1 {
 }
 
 .vacancy-item {
-    padding-top: 250px;
-    padding-bottom: 50px;
     background-color: #F5F5F5;
     font-family: Akrobat;
     font-weight: 800;
     font-size: 32px;
     line-height: 40px;
-    text-indent: 26px;
+    padding: 250px 0 50px 20px;
+    box-sizing: border-box;
 }
 
-span {
-    text-indent: 1em;
-}
 
 .vacancy-item:not(:last-child) {
 margin-bottom: 30px;

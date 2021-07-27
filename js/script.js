@@ -8,7 +8,7 @@ menuBtnRef.addEventListener("click", () => {
 
 
     menuBtnRef.classList.toggle("is-open");
-    menuBtnRef.setAttribute("artia-expanded", !expanded);
+    menuBtnRef.setAttribute("aria-expanded", !expanded);
 
 
     mobileMenuRef.classList.toggle("is-open");

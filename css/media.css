@@ -1,7 +1,7 @@
 /* Навигация - список menu-list */
 
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1919px) {
     .menu-list {
     display: none;
     }
@@ -69,7 +69,7 @@
 
 @media screen and (min-width: 1920px) {
     .yellow-main-page {
-    background: linear-gradient(to right, #FAFAFA 40%, #FFEA2F 40%);
+    background: linear-gradient(to right, #FAFAFA 15%, #FFEA2F 15%);
     }
     .blue-main {
     background: linear-gradient(to right, #FAFAFA 40%, #D3D1E9 40%);

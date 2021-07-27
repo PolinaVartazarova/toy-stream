@@ -47,6 +47,29 @@
 
 
 
+
+/* размер margin-bottom для планшетной и десктопной версии  */
+
+@media screen and (min-width: 1024px) {
+    .block-home {
+    margin-bottom: 51px;
+    }
+    block-career {
+    margin-bottom: 130px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .block-home {
+    margin-bottom: 77px;
+    }
+    block-career {
+    margin-bottom: 131px;
+    }
+}
+
+
+
 /*Градиентный фон*/
 
 @media screen and (max-width: 1023px) {
@@ -75,6 +98,26 @@
     background: linear-gradient(to right, #FAFAFA 40%, #D3D1E9 40%);
     }
 }
+
+
+
+
+/*Жёлтая главная страница*/
+
+@media screen and (max-width: 1023px) {
+    .yellow-main-page {
+    background: linear-gradient(to right, #F1FAFF 20%, #FFEA2F 20%);
+    } 
+}
+
+/* Закрасить margin-bottom на мобильной версии главной страницы*/
+
+@media screen and (max-width: 1023px) {
+    .container-mobile {
+    background-color: #F1FAFF; 
+    }
+}
+
 
 
 
@@ -127,7 +170,7 @@
 
 
 
-
+/*Карточки вакансий*/
 
 @media screen and (max-width: 1023px) {
     .vacancy-container {
@@ -169,7 +212,7 @@
 
 
 
-/*Настойка в списке вакансий*/
+/*Настройка в списке вакансий*/
 
 @media screen and (min-width: 1024px) {
     .vacancy-item:not(:last-child) {

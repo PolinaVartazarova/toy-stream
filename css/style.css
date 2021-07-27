@@ -20,7 +20,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative;
+    /*position: relative;*/
 }
 
 .nav {
@@ -55,6 +55,8 @@ body {
 
 
 
+/*Навигация*/
+
 .menu-list {
     list-style: none;
     display: flex;
@@ -86,27 +88,32 @@ body {
 .button-language {
     display: inline-block;
     text-decoration: none;
-    margin-right: 0;
+    margin: 0;
     font-family: 'Akrobat', sans-serif;
     font-weight: 800;
     font-size: 22px;
     line-height: 27px;    
     background-color: #CE0002;
     color: #FFF;
-    padding: 49px 45px 49px 45px;
-    cursor: pointer;    
+    padding: 33px 0 0 0;
+    cursor: pointer;   
+    box-sizing: border-box; 
+    width: 98px;
+    height: 98px;
+    text-align: center;
+    /*justify-content: space-between;*/
+
 }
 
 .button-language:hover,
 .button-language:focus {
-    background-color: #CE0002;
+    background-color: #FE0002;
 }
 
 
 .logo {
-    padding-left: 80px;
+    padding-left: 55px;
 }
-
 
 /*Бургер-меню*/
 
@@ -114,7 +121,8 @@ body {
 .menu-button {
     display: inline-flex;
     margin: 0;
-    padding: 0;
+    /*padding: 0;*/
+    padding: 0 0 0 17px;
     border: none;
     background-color: transparent;
 }
@@ -138,28 +146,17 @@ body {
 
 /*Background-attachment устанавливает, будет ли прокручиваться фоновое изображение вместе с содержимым элемента (scroll, fixed, local)*/
 
-/*.block-home {
-    background: url("../img/Frame.png") right / 345px 322px, linear-gradient(to right, #FAFAFA 20%, #FFEA2F 20%) center;
+.block-home {
+    argin-left: auto;
+    margin-right: auto;
     background-color: #FFEA2F;
-    background-repeat: no-repeat;
-    outline: 2px solid #000;
+    box-sizing: border-box;
     min-height: 875px;
-    margin-bottom: 7%;*/
-    /*background-position: ;*/
-    /* background-attachment: ;
-    background-size: contain;*/
-   /* background-attachment: ;
-    background-size: contain;*/
-/*}*/
+    margin-bottom: 49px;
+}
 
 
-/*.frame {
-     width: 345px;
-     margin-left: auto;
-     margin-right: auto;
-     padding: 0 15px 0 15px;
-}*/
-
+/* Звголовки h1 */
 
 h1 {
     font-family: 'Zona Pro', sans-serif;
@@ -247,6 +244,7 @@ h1 {
     margin-right: auto;
     /*background-color: #D3D1E9;*/
     box-sizing: border-box;
+    margin-bottom: 98px;
 }
 
 .vacancy {

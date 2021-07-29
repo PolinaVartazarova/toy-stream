@@ -88,43 +88,23 @@ body {
 
 
 /*            <div class="language">
-                <button class="button">
+                <button class="button button-1">
                      <span class="button-language" href="#">
                      ENG
                     </span>
                  </button>
               </div>  */
 
-
-               /*  <div class="details">
-                      <button class="button">
-                         <a class="button-details" href="#">
-                         Узнать<br> подробнее
-                         </a>
-                      </button>
-                </div> */
-   
-.button-1{
-    font-size: 20px;
-    line-height: 25px;
-}
-
-.button-d {
-    font-size: 22px;
-    line-height: 27px;
-}
-
 .language {
     height: 98px;
     width: 98px;
     display: flex;
 }
-
-.details {
-    height: 120px;
-    width: 120px;
+   
+.button-1{
+    font-size: 20px;
+    line-height: 25px;
 }
-
 
 .button {
     font-family: 'Akrobat', sans-serif;
@@ -144,42 +124,91 @@ body {
 }
 
 
+/*                  <div class="details">
+                      <button class="button button-d">
+                         <a class="button-details" href="#">
+                         Узнать<br> подробнее
+                         </a>
+                      </button>
+                    </div> */
+
+
 /*Красная кнопка "Узнать подробности"*/
 
-.button-details {
-    display: inline-flex;   
-    background-color: #CE0002;
-    color: #FFF;
+.details-2 {
+    height: 120px;
+    width: 120px;
+    display: flex;
+}
+
+.button-2 {
+    text-align: left;
+    padding-left: 15px;
+}
+
+.button-3 {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.details-3 {
+    height: 94px;
+    width: 192px;
+    display: flex;
+}
+
+.button-2 {
+    font-size: 22px;
+    line-height: 27px;
+}
+
+.button-3 {
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 27px;
+}
+
+
+.button-details-2,
+.button-details-3 {
     text-decoration: none;
-    padding: 45px 25px 45px 25px;
-    cursor: pointer;
-    position: relative;
+    color: #FFF;
 }
 
-.button-details:hover,
-.button-details:focus {
-    background-color: #CE0002;
-}
-
-.button-details::after {
+.button-details-2::after {
     width: 90px;
-    height: 20px;
-    background-color: #CE0002;
+    height: 16px;
+    background-color: transparent;
     content: "";
     background-image: url("../img/Arrow3.png");
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
-    margin-top: 60px;
-
+    margin: 30px 0 0 -90px;
     box-sizing: border-box;
 }
 
+.button-details-3::after {
+    width: 16px;
+    height: 39px;
+    background-color: transparent;
+    content: "";
+    background-image: url("../img/Arrow4.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    margin: -5px 0 0 53px;
+    box-sizing: border-box;
+}
 
 .logo {
     padding-top: 12px;
     padding-left: 55px;
 }
+
+
+
+
 
 /*Бургер-меню*/
 

@@ -8,6 +8,24 @@
 }
 
 
+/*Кнопка меню*/
+@media screen and (min-width: 1920px) {
+    .menu-button {
+    display: none;
+    }
+}
+
+
+/*Кнопка смены языка*/
+
+@media screen and (min-width: 1024px) {
+    .language {
+    height: 120px;
+    width: 120px;
+    }
+}
+
+
 /*Ширина экрана, шрифт для всех h1, шапка page-header*/
 
 /*outline: 2px solid red; - рамка*/
@@ -30,7 +48,14 @@
     font-size: 72px;
     line-height: 85px;
     }
+    .company {
+    max-width: 867px;
+    }
+    .career {
+    max-width: 603px;
+    }
 }
+
 
 @media screen and (min-width: 1920px) {
     .vacancy-container {
@@ -43,7 +68,43 @@
     font-size: 72px;
     line-height: 85px;
     }
+    .company {
+    max-width: 1077px;
+    }
+    .career {
+    max-width: 603px;
+    }
 }
+
+
+/*Параграфы p под h1*/
+
+@media screen and (max-width: 1919px) { 
+   .desktop-description {
+    display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .company-description {
+    font-size: 24px;
+    line-height: 30px;
+    max-width: 459px;
+    }
+    .career-description {
+    font-size: 24px;
+    line-height: 30px;
+    max-width: 606px;
+    }
+}
+
+
+@media screen and (min-width: 1920px) { 
+    .mobile-description {
+    display: none;
+    }
+}
+
 
 
 
@@ -83,7 +144,7 @@
 
 @media screen and (min-width: 1024px) {
     .yellow-main-page {
-    background: linear-gradient(to right, #FAFAFA 10%, #FFEA2F 10%);
+    background: linear-gradient(to right, #FAFAFA 9%, #FFEA2F 9%);
     }
     .blue-main {
     background: linear-gradient(to right, #FAFAFA 10%, #D3D1E9 10%);
@@ -119,6 +180,27 @@
 }
 
 
+
+
+/*Логотип и бургер-меню*/
+
+@media screen and (min-width: 1024px) {
+    .logo {
+    padding-top: 23px;
+    padding-right: 670px;
+    }
+    .menu-button {
+    padding-top: 46px;
+    padding-left: 30px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .logo {
+    padding-top: 23px;
+    padding-left: 84px;
+    }
+}    
 
 
 /* Картинка лампочка на фоне*/
@@ -249,13 +331,22 @@
 
 /*Блоки страниц, паддинги*/
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 1023px) {
     .block-home,
     .block-career {
     padding-left: 15px;
     padding-right: 15px;
     }
 }
+
+@media screen and (min-width: 1024px) {
+    .block-home,
+    .block-career {
+    padding-left: 47px;
+    padding-right: 110px;
+    }
+}
+
 
 
 

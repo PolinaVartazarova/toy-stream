@@ -11,14 +11,13 @@ body {
 
 .page-header {
     padding-bottom: 49px;
-    outline: 2px solid #000;
+   /* outline: 2px solid #000;*/
     margin: auto auto;
     box-sizing: border-box;
 }
 
 .header-container {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     /*position: relative;*/
 }
@@ -28,8 +27,10 @@ body {
     font-weight: 600;
     font-size: 20px;
     line-height: 25px;
-    outline: 2px solid #000;
-   /* margin-right: auto;*/
+    margin-top: 49px;
+    /*outline: 2px solid #000;*/
+    margin-left: auto;
+    margin-right: 95px;
 }
 
 
@@ -81,37 +82,102 @@ body {
 
 
 
-/*<div class="select-language">
-<a class="button-language" href="#">*/
 /*Красная кнопка, смена языка*/
 
-.button-language {
-    display: inline-block;
-    text-decoration: none;
-    margin: 0;
-    font-family: 'Akrobat', sans-serif;
-    font-weight: 800;
-    font-size: 22px;
-    line-height: 27px;    
-    background-color: #CE0002;
-    color: #FFF;
-    padding: 33px 0 0 0;
-    cursor: pointer;   
-    box-sizing: border-box; 
-    width: 98px;
-    height: 98px;
-    text-align: center;
-    /*justify-content: space-between;*/
 
+
+
+/*            <div class="language">
+                <button class="button">
+                     <span class="button-language" href="#">
+                     ENG
+                    </span>
+                 </button>
+              </div>  */
+
+
+               /*  <div class="details">
+                      <button class="button">
+                         <a class="button-details" href="#">
+                         Узнать<br> подробнее
+                         </a>
+                      </button>
+                </div> */
+   
+.button-l{
+    font-size: 20px;
+    line-height: 25px;
 }
 
-.button-language:hover,
-.button-language:focus {
+.button-d {
+    font-size: 22px;
+    line-height: 27px;
+}
+
+.language {
+    height: 98px;
+    width: 98px;
+    display: flex;
+}
+
+.details {
+    height: 120px;
+    width: 120px;
+}
+
+
+.button {
+    font-family: 'Akrobat', sans-serif;
+    font-weight: 800;
+    display: inline-block;
+    text-decoration: none;
+    border: none;    
+    background-color: #CE0002;
+    color: #FFF;
+    cursor: pointer;
+    flex-grow: 1;
+}
+
+.button:hover,
+.button:focus {
     background-color: #FE0002;
 }
 
 
+/*Красная кнопка "Узнать подробности"*/
+
+.button-details {
+    display: inline-flex;   
+    background-color: #CE0002;
+    color: #FFF;
+    text-decoration: none;
+    padding: 45px 25px 45px 25px;
+    cursor: pointer;
+    position: relative;
+}
+
+.button-details:hover,
+.button-details:focus {
+    background-color: #CE0002;
+}
+
+.button-details::after {
+    width: 90px;
+    height: 20px;
+    background-color: #CE0002;
+    content: "";
+    background-image: url("../img/Arrow3.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    margin-top: 60px;
+
+    box-sizing: border-box;
+}
+
+
 .logo {
+    padding-top: 12px;
     padding-left: 55px;
 }
 
@@ -122,7 +188,7 @@ body {
     display: inline-flex;
     margin: 0;
     /*padding: 0;*/
-    padding: 0 0 0 17px;
+    padding: 35px 0 0 17px;
     border: none;
     background-color: transparent;
 }
@@ -163,50 +229,44 @@ h1 {
     font-weight: 800;
     font-size: 32px;
     line-height: 38px;
+    text-transform:uppercase;
     margin: 0;
 }
+
+.company {
+    max-width: 352px;
+}
+.career {
+    max-width: 262px;
+}
+
 
 .company-description {
     font-family: 'Akrobat', sans-serif;
     font-weight: 600;
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 16px;
+    line-height: 20px;
+    max-width: 345px;
 }
 
-
-
-/*Красная кнопка "Узнать подробности"*/
-
-.button-details {
-    display: inline-flex;
+.career-description {
     font-family: 'Akrobat', sans-serif;
-    font-weight: 800;
-    font-size: 22px;
-    line-height: 27px;    
-    background-color: #CE0002;
-    color: #FFF;
-    text-decoration: none;
-    padding: 45px 25px 45px 25px;
-    cursor: pointer;
-    position: relative;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    max-width: 335px;
 }
 
-.button-details:hover,
-.button-details:focus {
-    background-color: #CE0002;
-}
 
-.button-details::after {
-    width: 90px;
-    height: 20px;
-    background-color: #CE0002;
-    content: "";
-    background-image: url("../img/Arrow3.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    margin-top: 45%;
-}
+
+
+
+
+
+
+
+
+
 
 
 .page-footer {

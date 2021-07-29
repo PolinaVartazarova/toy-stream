@@ -350,6 +350,24 @@
 
 
 
+/*Подвал*/
+
+@media screen and (min-width: 1920px) {
+    .footer-container {
+    padding: 0 27px 0 27px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+.footer-nav {
+    display: none;
+    }   
+}
+
+
+
+
+
 
 
 /*Не включать*/

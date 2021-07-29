@@ -292,36 +292,63 @@ h1 {
 
 
 
-
-
-
-
-
+/*Подвал*/
 
 .page-footer {
     background-color: #EFEFEF;
-    padding-bottom: 54px;
     margin: 0;
 }
 
 .footer-container {
     display: flex;
+    min-width: 338px;
+    max-width: 1790px;
     justify-content: space-between;
     margin: 0;
+    padding: 0 20px 0 20px;
+    margin: auto;
+    align-items: center;
+    height: 54px;
+    box-sizing: border-box;
 }
 
 .footer-coopyright{
-     
+    font-family: Akrobat;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #7E7E7E;  
 }
 
 .footer-nav {
-    
+    /*display: flex;*/
+
+}
+
+.footer-nav-link {
+    text-decoration: none;
+    font-family: Akrobat;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #7E7E7E;
 }
 
 .footer-socials {
-    
+    max-width: 200px;
 }
 
+.socials-link {
+
+}
+ 
+
+/*.socials-link:not(:last-child) */
+   
+ .footer-nav-link:not(:last-child) {   
+    margin-right: 35px;
+}
 
 
 

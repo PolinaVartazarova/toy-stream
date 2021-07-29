@@ -2,7 +2,7 @@
 
 
 @media screen and (max-width: 1919px) {
-    .menu-list {
+    .nav {
     display: none;
     }
 }
@@ -228,11 +228,41 @@
 
 
 
+
+
+
+/*Ордеры*/
+
+/*@media screen and (max-width: 1023px) {
+    .company {
+    order: 0;
+    }
+    .company-description {
+    order: 2;
+    }
+    .details-2 {
+    order: 1; 
+    }
+    .frame-unicorn {
+    order: 0;
+    }
+}*/
+
+@media screen and (min-width: 1024px) {
+    .frame-unicorn {
+    order: 1;
+    }
+}
+
+
+
+
+
 /* Картинка единорога на фоне*/
 
 @media screen and (max-width: 1023px) {
     .frame-unicorn {
-    padding: 0 15px 313px 15px;
+    /*padding: 0 15px 313px 15px;*/
     text-align: center;
     }
 }
@@ -244,11 +274,6 @@
     }
 }
 
-@media screen and (min-width: 1920px) {
-    .frame-unicorn {
-    padding: 0 464px 29px 1131px;
-    }
-}
 
 
 

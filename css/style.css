@@ -116,6 +116,7 @@ body {
     color: #FFF;
     cursor: pointer;
     flex-grow: 1;
+    display: inline-block;
 }
 
 .button:hover,
@@ -248,7 +249,13 @@ body {
     box-sizing: border-box;
     min-height: 875px;
     margin-bottom: 49px;
+    display: flex;
+    flex-wrap: wrap;
+    /*flex-flow: row wrap;*/
 }
+
+
+
 
 
 /* Звголовки h1 */

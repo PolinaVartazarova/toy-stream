@@ -1,64 +1,267 @@
+/*Обнуление*/
+*,*:before,*:after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    /*box-sizing: border-box;*/
+}
+
+html, body {
+    height: 100%;
+}
+
 body {
     margin: 0;
 }
 
-.container {
+.wrapper {
     margin-left: auto;
     margin-right: auto;
     background-color: #fff;
     box-sizing: border-box;
 }
 
-.page-header {
+/*.page-header {
     padding-bottom: 49px;
-   /* outline: 2px solid #000;*/
+    outline: 2px solid #000;
     margin: auto auto;
     box-sizing: border-box;
+}*/
+
+.header {
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+}
+
+/*Фиксированная плашка*/
+.header:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*background-color: #FFEA2F;*/
+    z-index: 2;
 }
 
 .header-container {
+    /*display: flex;*/
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.logo {
+    z-index: 3;
+    max-width: 100%;
+    display: block;
+}
+
+.header-body {
+    position: relative;
+    z-index: 2;
     display: flex;
     justify-content: space-between;
-    /*position: relative;*/
+    height: 98px;
+    align-items: center;
 }
 
-.nav {
-    font-family: Akrobat;
-    font-weight: 600;
-    font-size: 20px;
+/*.header-container = body {
+    display: flex;
+    max-width: 1920px;
+    justify-content: space-between;
+    margin: 0;
+    margin: auto;
+    align-items: center;
+    box-sizing: border-box;
+}*/
+
+
+.menu-list {
+    display: flex;  /*отключение флекса, навигация для бургер-меню теперь вертикальная*/
+    position: relative;
+    z-index: 2;
+    }
+.menu-list li {
+    list-style: none;
+    margin: 0 0 0 20px;
+    }
+.nav-link {
+    font-size: 24px;
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+    }
+
+
+
+
+/*Бургер-меню*/
+   .header-burger {
+    margin-left: 15px;
+
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .header-burger {
+    margin-left: 30px;
+    }
+}
+
+
+/*Рисуем бургер*/
+@media screen and (max-width: 1199px) {
+    body.lock {
+    overflow: hidden; /*JS отключение скролла, когда бургер-меню активно*/
+    }
+   .header-body {
+    height: 98px; 
+    }
+   .header-burger {
+    display: block;
+    position: relative;
+    width: 32px;
+    height: 22px;
+    /*чтобы вытащить бургер-меню наверх*/
+    position: relative;
+    z-index: 3;
+    }
+    /*следующие два класса можно объединить*/
+    .header-burger span {
+        position: absolute;
+        background-color: #000;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        top: 9px;
+        /*анимация исчезновения*/
+        transition: all 0.3s ease 0s;
+    }
+    .header-burger:before,
+    .header-burger:after {
+        content: '';
+        background-color: #000;
+        position: absolute;
+        width: 100%;
+        height: 3px;   /*ширина линий*/
+        left: 0;
+        /*анимация исчезновения*/
+        transition: all 0.3s ease 0s;
+    }
+    .header-burger:before {
+        top: 0;
+    }
+    .header-burger:after {
+        bottom: 0;
+    }
+
+    /* JS header__burger с классом active*/
+    .header-burger.active span {
+        transform: scale(0);
+    } 
+
+    .header-burger.active:before {
+        transform: rotate(45deg);
+        top: 9px;
+    }
+    .header-burger.active:after {
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+
+
+ /*Оформление шапки для раскрытого бургер меню*/
+    .nav {
+        position: fixed;
+        top: -100%; /*чтобы меню выезжало сверху*/
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto; /*чтобы навигация бургер-меню скролилась, если список не помещается на экране*/
+        background-color: #FFF;
+        transition: all 0.3s ease 0s;
+        padding: 130px 40px 20px 40px;
+        text-transform: uppercase;
+        opacity: 0.9;
+        box-sizing: border-box;
+    }
+
+    /*JS навигация выдвигается сверху из-под шапки при нажатии на бургер-меню*/
+    .nav.active {
+        top: 0;
+    }
+
+    .menu-list {
+        display: block;
+    }
+
+    .menu-list li {
+        list-style: none;
+        margin: 0 0 40px 0;
+    }
+}
+
+
+
+.block {
+    padding: 110px 0 0 0;
+}
+
+@media screen and (max-width: 1023px) {
+    .block {
+        padding: 110px 0 0 0;
+    }
+}
+
+/*Вытащить текст из-под шапки*/
+/*.content{
+    padding: 110px 0 0 0;
+}
+.content__text {
+    font-size: 18px;
     line-height: 25px;
-    margin-top: 49px;
-    /*outline: 2px solid #000;*/
-    margin-left: auto;
-    margin-right: 95px;
 }
-
-
-
-
-/*Заготовка для выпадающего меню
-Позиционируется относительно .header-container
-или как вариант относительно .page-header*/
-
-/*.menu-container {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 800px;
-    background-color: #fff;
-    padding: 20px;
-    text-align: center;
-    font-size: 20px;
-    opacity: 0.8;
+.content__text p {
+    margin: 0 0 20px 0;
+}
+@media screen and (max-width: 767px) {
+    .content {
+        padding: 70px 0 0 0;
+    }
 }*/
 
 
 
 
-/*Навигация*/
+.nav {
+    font-family: Zona Pro;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 38px;
+}
 
-.menu-list {
+@media screen and (min-width: 1200px) {
+    .nav {
+    font-family: Akrobat;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    margin-left: auto;
+    margin-right: 95px;
+    }
+}
+
+/*.menu-list {
     list-style: none;
     display: flex;
     margin: 0;
@@ -79,21 +282,11 @@ body {
 .nav-link:focus {
     color: #FF0000;
 }
+*/
 
 
 
 /*Красная кнопка, смена языка*/
-
-
-
-
-/*            <div class="language">
-                <button class="button button-1">
-                     <span class="button-language" href="#">
-                     ENG
-                    </span>
-                 </button>
-              </div>  */
 
 .language {
     height: 98px;
@@ -124,14 +317,6 @@ body {
     background-color: #FE0002;
 }
 
-
-/*                  <div class="details">
-                      <button class="button button-d">
-                         <a class="button-details" href="#">
-                         Узнать<br> подробнее
-                         </a>
-                      </button>
-                    </div> */
 
 
 /*Красная кнопка "Узнать подробности"*/
@@ -203,58 +388,53 @@ body {
 }
 
 .logo {
-    padding-top: 12px;
-    padding-left: 55px;
+    padding-left: 30px;
 }
-
-
-
-
-
-/*Бургер-меню*/
-
-
-.menu-button {
-    display: inline-flex;
-    margin: 0;
-    /*padding: 0;*/
-    padding: 35px 0 0 17px;
-    border: none;
-    background-color: transparent;
-}
-
-.menu-button .icon-cross {
-    display: none;
-}
-
-
-.menu-button.is-open .icon-cross {
-    display: block;
-}
-
-.menu-button.is-open .icon-menu {
-    display: none;
-}
-
 
 
 
 
 /*Background-attachment устанавливает, будет ли прокручиваться фоновое изображение вместе с содержимым элемента (scroll, fixed, local)*/
 
-.block-home {
-    argin-left: auto;
-    margin-right: auto;
-    background-color: #FFEA2F;
-    box-sizing: border-box;
-    min-height: 875px;
-    margin-bottom: 49px;
-    display: flex;
-    flex-wrap: wrap;
-    /*flex-flow: row wrap;*/
+.block { 
+    margin: auto auto;
+    margin: 0;
 }
 
 
+.block-container {
+    display: flex;
+    max-width: 1920px;
+    justify-content: space-between;
+    margin: 0;
+    /*padding: 0 47px 0 47px;*/
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.aside {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.aside .socials-link {
+    margin-bottom: 10px;
+}
+
+.block-content {
+    justify-content: space-between;
+}
+
+.block-description {
+   display: flex;
+}
+
+.block-details {
+    display: flex;
+    order: 1; /*меняет местами блок с иконками socials-link и блок с описанием .block-details*/
+}
 
 
 
@@ -296,23 +476,19 @@ h1 {
 
 
 
-
-
-
 /*Подвал*/
 
-.page-footer {
+.footer {
     background-color: #EFEFEF;
     margin: 0;
 }
 
 .footer-container {
     display: flex;
-    min-width: 338px;
     max-width: 1790px;
     justify-content: space-between;
     margin: 0;
-    padding: 0 20px 0 20px;
+    padding: 0 10px 0 10px;
     margin: auto;
     align-items: center;
     height: 54px;
@@ -342,26 +518,21 @@ h1 {
     color: #7E7E7E;
 }
 
+.footer-nav-link:not(:last-child) {   
+    margin-right: 10px;
+}
+
 .footer-socials {
     max-width: 200px;
 }
 
-.socials-link {
-
-}
- 
-
+.socials-link {}
 /*.socials-link:not(:last-child) */
    
- .footer-nav-link:not(:last-child) {   
-    margin-right: 35px;
-}
 
 
 
 /*Карьера*/
-
-
 .block-career {
     margin-left: auto;
     margin-right: auto;
@@ -395,9 +566,6 @@ h1 {
     box-sizing: border-box;
 }
 
-
 .vacancy-item:not(:last-child) {
 margin-bottom: 30px;
 }
-
-

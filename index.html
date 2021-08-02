@@ -10,43 +10,30 @@
    <link rel="stylesheet" href="./css/media.css" />
     </head>
       <body>
-        <div class="container container-mobile">
+        <div class="wrapper wrapper-mobile wrapper-main">
 
-         <div class="page-header yellow-main-page">
+            <header class="header"> 
 
-            <header class="header-container">
+                <div class="header-container">
 
+                    <div class="header-body">
                     
-                 <button 
-                           type="button" 
-                           class="menu-button is-open"
-                           aria-expanded="false" 
-                           data-menu-button
-                           >
-                           <svg 
-                             width="35" 
-                             height="35" 
-                             aria-label="Переключатель мобильного меню">
-                               <use class="icon-cross" href="img/Cross.svg#Cross"></use>
-                               <use class="icon-menu" href="img/Burger.svg#Burger"></use>
-                           </svg>    
-                    </button>
+                    <!-- Новая кнопка бургер-меню -->
+                    <div class="header-burger">
+                      <span></span>
+                    </div>
 
 
                     <div class="logo">
-                     <img src="img/Logo.svg" alt="Логотип" class="logo-img">
-                  </div>
+                      <img src="img/Logo.svg" alt="Логотип" class="logo-img">
+                    </div>
                  
 
-
                  <nav class="nav">
-                  
-                  <div class="menu-container">
 
                    <ul class="menu-list">
-                        
 
-                        <li class="nav-item"><a class="nav-link" href="1.html">Главная</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Компания</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Игры</a></li>
                         <li class="nav-item"><a class="nav-link" href="career.html">Карьера</a></li>	
@@ -54,8 +41,6 @@
                         <li class="nav-item"><a class="nav-link" href="#">Контакты</a></li>
 
                   </ul>	
-                  
-                </div>
 
               </nav>  
 
@@ -66,48 +51,74 @@
                       ENG
                      </span>
                   </button>
-               </div>    
+                </div> 
 
+               </div> 
+
+             </div>  
 
            </header>	
-
-         </div> 
               
 
+             <div class="block">
 
-                <div class="block-home yellow-main-page">
+                <div class="block-container yellow-main-page">
+
+                      <div class="block-content">
 
                          <h1 class="company">Мы создаем мобильные игры, в которые ты играешь</h1>
                               
 
-                            <div class="break"></div>  
+                           <!--  <div class="break"></div>   -->
 
 
+                          <div class="block-description">  
+                           
+                                           <div class="block-details">
+                           
                             <div class="details-2">
                              <button class="button button-2">
                                 <a class="button-details-2" href="#">
                                 Узнать<br> подробнее
                                 </a>
                              </button>
-                           </div> 
+                            </div>
+                           
 
 
                          <p class="company-description">«Оригинальные идеи, качество реализации игровых механик и внимание к деталями интерфейса - наши основные принципы».</p>
+                                            </div>  
 
 
-                          <div class="frame-unicorn">
+                                            <aside class="aside">
+                    <a href="https://www.pinterest.com/" class="socials-link" target="_blank"><img src="img/Pintrest.svg" alt="Pintrest" class="socials-img"></a>
+                    <a href="https://www.behance.net/" class="socials-link" target="_blank"><img src="img/Behance.svg" alt="Behance" class="socials-img"></a>
+                    <a href="https://dribbble.com/" class="socials-link" target="_blank"><img src="img/Dribbble.svg" alt="Dribbble" class="socials-img"></a>
+                    <a href="https://www.snapchat.com/" class="socials-link" target="_blank"><img src="img/Snapchat.svg" alt="Snapchat" class="socials-img"></a>
+                    <a href="https://linkedin.com/" class="socials-link" target="_blank"><img src="img/Linkedin.svg" alt="Linkedin" class="socials-img"></a>
+                    <a href="https://www.facebook.com/" class="socials-link" target="_blank"><img src="img/Facebook.svg" alt="Facebook" class="socials-img"></a>
+                  </aside> 
+
+                        </div>
+
+                      </div>
+
+                        <div class="frame-unicorn">
                              <picture>
-                                 <source srcset="img/Frame.png" width="786" media="(min-width: 1920px)"> 
-                                 <source srcset="img/Frame.png" width="786" media="(min-width: 1024px)">
-                                 <source srcset="img/Frame-mobile.png" width="345" media="(max-width: 1023px)"> 
+                                 <source srcset="img/Frame.png" width="540" media="(min-width: 1200px)"> 
+                                 <source srcset="img/Frame.png" width="540" media="(min-width: 1024px)">
+                                 <source srcset="img/Frame-mobile.png" width="300" media="(max-width: 1023px)"> 
                                  <img src="img/Frame-mobile.png" alt="Единорог" class="picture-img">
-                            </picture>      
+                            </picture> 
+
                         </div> 
 
-                </div>          
+                  </div>     
+
+              </div>     
 
 
-           <footer class="page-footer">
+           <footer class="footer">
               <div class="footer-container">
 
               	<div class="footer-coopyright">© Toy.Stream, Inc.</div>
@@ -132,7 +143,7 @@
               
               </div> 
            
-            </footer>   
+           </footer>   
         </div>
 
         

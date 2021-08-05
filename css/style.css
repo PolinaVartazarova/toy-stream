@@ -654,3 +654,88 @@ margin-bottom: 30px;
 
 .socials-link {}
 /*.socials-link:not(:last-child) */
+
+
+
+
+.page {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden; /*Фактически отключает стандартный скролл, чтобы контент занимал только размер экрана*/
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.screen {
+    flex: 1 0 100%; 
+    position: relative;
+}
+
+.block-blue {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden; /*чтобы не выходило за границы экрана*/
+}
+
+.vacancy-block {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.page-pagination {
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    transform: translate(0 px, -50%);
+    display: flex;
+    flex-direction: column;
+}
+
+/*Точки-буллиты*/
+.page-bullet {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 10px 0;
+    transition: background-color 0.3s ease 0s;
+}
+
+/*Активные точки*/
+.page-bullet-active {
+    background-color: #CE0002;
+}
+
+/*Кастомный скролл*/
+.page-scroll {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+    width: 4px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+/*Ползунок*/
+.page-drag-scroll {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+}

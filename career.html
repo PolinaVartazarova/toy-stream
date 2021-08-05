@@ -5,12 +5,27 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" 
     />
 	<title>Карьера в Toy.Stream</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="./css/style.css" />
 	<link rel="stylesheet" href="./css/fonts.css" />
     <link rel="stylesheet" href="./css/media.css" />
 </head>
 <body>
-   <div class="wrapper wrapper-mobile">
+
+
+    <!-- Главный контейнер слайдера -->
+   <!-- <div class="swiper-container"> -->
+
+   <div class="wrapper wrapper-mobile swiper-wrapper">
+
+      <!-- Оболочка лэндинга-->
+      <main class="page">
+
+        <!-- Оболочка слайдов -->
+      <div class="page-wrapper">
+
+         <!-- Контент внутри слайдера 1-->
+        <div class="page-screen screen">
 
             <header class="header"> 
 
@@ -118,9 +133,17 @@
 
                 </div> <!-- block  --> 
 
+            </div> <!-- Контент внутри слайдера 1-->
+
+
+
+
             <!-- Список вакансий -->
 
-            <!-- <h2 class="vacancy">наши<br> вакансии</h2> -->
+
+
+           <!-- Контент внутри слайдера 2-->
+           <div class="page-screen screen">
 
             <div class="vacancy-block">
 
@@ -142,9 +165,6 @@
          </div>  <!-- vacancy-b -->
           
            <!-- </div> -->
-
-
-
 
 
             <footer class="footer">
@@ -173,13 +193,29 @@
               
               </div> 
            
-            </footer>     
-        </div>
+            </footer>  
 
+        
+            </div> <!-- Контент внутри слайдера 2-->
+              
+
+            </div> <!-- Оболочка слайдов -->
+
+
+            <div class="page-pagination"></div>
+            <div class="page-scroll"></div>
+
+
+          </main>
+
+        </div> <!-- wrapper и swiper-wrapper-->
+
+    <!-- </div> --> <!-- Главный контейнер слайдера -->
+
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
        <!-- скрипт для кнопки меню menu-button -->
       <script src="js/script.js"></script>
-
 
     </body>
 

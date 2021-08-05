@@ -196,28 +196,6 @@
 }
 
 
-
-/*Картинка и текст меняются метсами в мобильной и планшетной версии*/
-
-@media screen and (max-width: 1023px) {
-    .block-container {
-    display: flex;
-    flex-flow: wrap;
-    }
-    .block-content {
-    order: 1;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-    .block-container {
-    flex-flow: column wrap;
-    }
-}
-
-
-
-
 /*Карточки вакансий*/
 
 @media screen and (max-width: 1023px) {
@@ -361,18 +339,40 @@
     }
 }
 
+
+
+
+/*Картинка и текст меняются метсами в мобильной и планшетной версии*/
+
 /*@media screen and (max-width: 1023px) {
+    .block-container {
+    display: flex;
+    flex-flow: wrap;
+    }
     .block-content {
-        display: flex;
-        flex-flow: column wrap;
-    }
-    .frame-unicorn {
-        order: 0;
-    }
-    .company-heading {
-        order: -2;
-    }
-    .block-description {
-        order: 0;
+    order: 1;
     }
 }*/
+
+/*@media (min-width: 768px) and (max-width: 1023px) {
+    .block-container {
+    flex-flow: column wrap;
+    }
+}
+*/
+
+
+
+@media screen and (max-width: 1023px) {
+    .frame-unicorn {
+        display: none;
+    }
+    .frame-unicorn-mobile {
+        padding-bottom: 69px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .frame-unicorn-mobile {
+        display: none;
+    }
+}

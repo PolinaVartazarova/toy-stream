@@ -11,7 +11,6 @@ if (iconMenu){
 }
 
 
-
 // Слайдер для страницы "Карьера"
 let pageSlider = new Swiper('.page',{
 
@@ -27,7 +26,7 @@ let pageSlider = new Swiper('.page',{
 	slidesPerView: 'auto',
 
 // включение паралалкса
-	parallax: true,
+	// parallax: true,
 
 
 // Управление клавиатурой
@@ -90,3 +89,30 @@ let pageSlider = new Swiper('.page',{
    },
 
 })
+
+
+
+
+
+// Отключение поэкранной прокрутки
+// function setScrollType() {
+// 	if (wrapper.classList.contains('free')) {
+// 		wrapper.classList.remove('free');
+// 		pageSlider.params.freeMode = false;
+// 	}
+
+
+
+// 	for (let index = 0; index < pageSlider.slides.length; index++) {
+// 		const pageSlide = [index];
+// 		const pageSlideContent = pageSlide.querySelector('.page-screen');
+// 		if (pageSlideContent) {
+// 			const pageSlideContentHeight = pageSlideContent.offsetHeight;
+// 			if (pageSlideContentHeight > window.innerHeight) {
+
+// 				pageSlider.params.freeMode = true;
+// 				break;
+// 			}
+// 		}
+// 	}
+// }

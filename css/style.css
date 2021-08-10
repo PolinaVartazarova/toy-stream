@@ -463,6 +463,10 @@ body {
 /* БЛОКИ */
 
 .block { 
+    /* Фикс прокрутки на Главной */
+    min-height: 100%;
+
+
     margin: auto auto;
     margin: 0;
 }
@@ -889,19 +893,15 @@ p {
     margin-bottom: 30px;
     padding: 0 15px;
     box-sizing: border-box;
-    /*justify-content: center;*/
     flex-flow: wrap;
 }
 
 .bonus {
     display: flex;
     flex-flow: column wrap;
-    /*justify-content: center;*/
-    /*align-items: center;*/
 }
 
 .frame-bonus {
-    /*background: linear-gradient(to right, #F5F5F5 50%, #FFF 50%);*/
     background-color: #F5F5F5;
     box-sizing: border-box;
 }
@@ -990,6 +990,14 @@ p {
 /*Подвал*/
 
 .footer {
+    /* Липкий футер */
+    width: 100%;
+    position: fixed;
+    z-index: 50;
+    bottom: 0;
+    left: 0;
+
+
     background-color: #EFEFEF;
     margin: 0;
 }
